@@ -8,13 +8,13 @@ Signature Method :
 Solution:
 */
 
-
 def f(arr:List[Int]):List[Int] = {
 arr.zipWithIndex.filter{ case(_,index) => index%2!=0}.map{case(element,_) => element}
 }
 
 
-/* Explanation of Solution:
+/* 
+Explanation of Solution:
 - The zipWithIndex pairs each element to its corresponding Index.
 - The filter method keeps only the tuples which are not odd.
 - The map method using case method, extracts the elements of the odd index.
